@@ -44,10 +44,14 @@ const Navigation = styled.nav`
 
 // Styled footer component
 const FooterContainer = styled.footer`
+  
+  text-align: center;
   background-color: #333;
   color: #fff;
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Copyright = styled.p`
@@ -96,7 +100,7 @@ const Header = () => {
   return (
     <div>
       {data.map((item) => (
-	  <Card
+	  <Card     
         key={item.id}
         title={item.title}
         body={item.body}
