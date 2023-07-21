@@ -100,7 +100,8 @@ const Header = () => {
   return (
     <div>
       {data.map((item) => (
-	  <Card     
+	  <Card 
+        description = "Product Description" 
         key={item.id}
         title={item.title}
         body={item.body}
